@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity
     int rndColor;
     Intent intent;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -37,7 +36,6 @@ public class MainActivity extends AppCompatActivity
         });
 
         rnd = new Random();
-        adb = new AlertDialog.Builder(this);
     }
 
     /**
@@ -47,6 +45,8 @@ public class MainActivity extends AppCompatActivity
      */
     public void clickedBtn1(View view)
     {
+        adb = new AlertDialog.Builder(this);
+
         adb.setMessage("you've clicked button1");
 
         AlertDialog ad = adb.create();
@@ -60,6 +60,8 @@ public class MainActivity extends AppCompatActivity
      */
     public void clickedBtn2(View view)
     {
+        adb = new AlertDialog.Builder(this);
+
         adb.setMessage("you've clicked button2");
         adb.setIcon(R.drawable.icon1);
 
@@ -75,6 +77,8 @@ public class MainActivity extends AppCompatActivity
      */
     public void clickedBtn3(View view)
     {
+        adb = new AlertDialog.Builder(this);
+
         adb.setMessage("you've clicked button3");
         adb.setIcon(R.drawable.icon2);
         adb.setCancelable(false);
@@ -99,11 +103,15 @@ public class MainActivity extends AppCompatActivity
     }
 
     /**
+     *                  The function Displays an alert dialog with a message, a positive
+     *                  button to change the background color and a neutral button to close the dialog.
      *
      * @param view The view that triggered the click event
      */
     public void clickedBtn4(View view)
     {
+        adb = new AlertDialog.Builder(this);
+
         adb.setMessage("to change background color click 'change'");
         adb.setCancelable(false);
 
@@ -145,8 +153,17 @@ public class MainActivity extends AppCompatActivity
         ad.show();
     }
 
+    /**
+     *                  The function Displays an alert dialog with a message, a positive
+     *                  button to change the background color, a negative button to change the background
+     *                  color back to white and a neutral button to close the dialog.
+     *
+     * @param view The view that triggered the click event
+     */
     public void clickedBtn5(View view)
     {
+        adb = new AlertDialog.Builder(this);
+
         adb.setMessage("to change background color click 'change'");
         adb.setCancelable(false);
 
@@ -209,8 +226,6 @@ public class MainActivity extends AppCompatActivity
         intent = new Intent(this, Credits.class);
         startActivity(intent);
     }
-
-
 }
 
 
