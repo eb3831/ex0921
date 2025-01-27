@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity
     {
         adb = new AlertDialog.Builder(this);
 
+        adb.setTitle("Button1");
         adb.setMessage("you've clicked button1");
 
         AlertDialog ad = adb.create();
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity
     {
         adb = new AlertDialog.Builder(this);
 
+        adb.setTitle("Button2");
         adb.setMessage("you've clicked button2");
         adb.setIcon(R.drawable.icon1);
 
@@ -79,6 +81,7 @@ public class MainActivity extends AppCompatActivity
     {
         adb = new AlertDialog.Builder(this);
 
+        adb.setTitle("Button3");
         adb.setMessage("you've clicked button3");
         adb.setIcon(R.drawable.icon2);
         adb.setCancelable(false);
@@ -112,6 +115,7 @@ public class MainActivity extends AppCompatActivity
     {
         adb = new AlertDialog.Builder(this);
 
+        adb.setTitle("Button4");
         adb.setMessage("to change background color click 'change'");
         adb.setCancelable(false);
 
@@ -164,6 +168,7 @@ public class MainActivity extends AppCompatActivity
     {
         adb = new AlertDialog.Builder(this);
 
+        adb.setTitle("Button5");
         adb.setMessage("to change background color click 'change'");
         adb.setCancelable(false);
 
